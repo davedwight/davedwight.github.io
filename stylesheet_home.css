@@ -1,0 +1,139 @@
+/** {
+	border: 1px dashed black;
+}*/
+
+body {
+	background-color: #FDFEFE;
+	font-family: Futura, Tahoma, sans-serif;
+	margin: 0;
+	/*if you want a background image
+	
+	background-image: url(Rinjani.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;*/
+}
+
+#navbar {
+	width: 700px;
+	display: block;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 260px;
+	height: 130px;
+	margin-top: 5%;
+	margin-bottom: 50px;
+	display: inline-block;
+	float: left;
+}
+
+ul {
+	list-style-type: none;
+	font-weight: 100;
+	font-size: 0.8em;
+	display: inline-block;
+	margin-top: 13%;
+	float: right;
+}
+
+li {
+	display: inline-block;
+	padding: 0px 10px 0px 10px;
+}
+
+a {
+	color: #808B96;
+	text-decoration: none;
+}
+	
+li a:hover {
+	color: #111;
+	text-decoration: none;
+}
+
+#mainimage {
+	width: 700px;
+	height: 466px;
+	display: block;
+	margin: 120px auto 70px auto;
+	clear: both;
+}
+
+#iconbar {
+	margin: auto;
+	width: 250px;
+	height: 100px;
+	border-top: 1px solid #ABB2B9;
+	border-bottom: 1px solid #ABB2B9;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	display: inline;
+	margin-top: 8%;
+}
+
+.icon:hover {
+	opacity: 0.5;
+}
+
+#footer {
+	background-color: none;
+	padding: 15px 0px 15px 5px;
+	font-weight: 100;
+	font-size: 0.8em;
+	margin-bottom: -100px;
+	margin-top: 50px;
+	float: left;
+}
+
+span {
+	font-weight: bold;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

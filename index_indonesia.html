@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet_photosub.css"/>
+		<title>Indonesia</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+		<style type="text/css">
+   			a.fancybox img {
+        	border: none;
+    		}
+		</style>
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="index.html"><img id="logo" src="logo.png"/></a>
+			<ul>
+				<li><a href="index_photos.html"><span>PHOTOS</span></a></li>
+				<li><a href="index_writing.html">WRITING</a></li>
+				<li><a href="index_reading.html">READING</a></li>
+				<li><a href="index_about.html">ABOUT</a></li>
+				<li><a href="mailto:dpdwight@gmail.com">CONTACT</a></li>	
+			</ul>
+		</div>
+		<h5>- INDONESIA -</h5>
+		<table>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/1_016.jpg" data-big="photos/Indonesia_big/1_016.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/2_018.jpg" data-big="photos/Indonesia_big/2_018.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/3_028.jpg" data-big="photos/Indonesia_big/3_028.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/4_036.jpg" data-big="photos/Indonesia_big/4_036.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/5_01-002.jpg" data-big="photos/Indonesia_big/5_01-002.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/6_01-009.jpg" data-big="photos/Indonesia_big/6_01-009.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/7_01-012.jpg" data-big="photos/Indonesia_big/7_01-012.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/8_01-013.jpg" data-big="photos/Indonesia_big/8_01-013.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/9_01-015.jpg" data-big="photos/Indonesia_big/9_01-015.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/10_01-017.jpg" data-big="photos/Indonesia_big/10_01-017.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/11_01-022.jpg" data-big="photos/Indonesia_big/11_01-022.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/12_01-023.jpg" data-big="photos/Indonesia_big/12_01-023.jpg"/></td>				
+			</tr>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/13_01-034.jpg" data-big="photos/Indonesia_big/13_01-034.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/14_01-019.jpg" data-big="photos/Indonesia_big/14_01-019.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/15_01-006.jpg" data-big="photos/Indonesia_big/15_01-006.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/16_01-014.jpg" data-big="photos/Indonesia_big/16_01-014.jpg"/></td>
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/17_01-030.jpg" data-big="photos/Indonesia_big/17_01-030.jpg"/></td>					
+				<td><img class="fancybox" id="landscape" src="photos/Indonesia_small/18-005.jpg" data-big="photos/Indonesia_big/18-005.jpg"/></td>
+			</tr>
+		</table>
+		<div id="footer">created by <span>Dave Dwight<span></div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+		<script type="text/javascript">
+    		$(function($){
+        	var addToAll = false;
+        	var gallery = true;
+        	var titlePosition = 'inside';
+        	$(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+       		 });
+        	if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        	$('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        	});
+    		});
+    		$.noConflict();
+		</script>
+	</body>
+</html>
