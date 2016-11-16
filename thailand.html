@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet_photosub.css"/>
+		<link rel="shortcut icon" type="image/png" href="Penguin.png" />
+		<title>Thailand</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+		<style type="text/css">
+   			a.fancybox img {
+        	border: none;
+    		}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<div class="logocontainer"><a href="index.html"><img id="logoimage" src="logo.png"/></a></div>
+				<div class="nav">
+					<ul>
+						<li><a href="photos.html"><span>PHOTOS</span></a></li>
+						<li><a href="writing.html">WRITING</a></li>
+						<li><a href="reading.html">READING</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="mailto:dpdwight@gmail.com">CONTACT</a></li>	
+					</ul>
+				</div>
+			</div>			
+		</div>
+		<div class="bodycontainer">
+			<div id="titlecontainer"><h5>- THAILAND -</h5></div>
+			<table>
+			<table>
+				<tr>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/1_01-007.jpg" data-big="photos/Thailand_big/1_01-007.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/2_01-024.jpg" data-big="photos/Thailand_big/2_01-024.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/3_01-025.jpg" data-big="photos/Thailand_big/3_01-025.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/4_01-029.jpg" data-big="photos/Thailand_big/4_01-029.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/5_01-030.jpg" data-big="photos/Thailand_big/5_01-030.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/6_01-032.jpg" data-big="photos/Thailand_big/6_01-032.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/7_01-035.jpg" data-big="photos/Thailand_big/7_01-035.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/8_01-036.jpg" data-big="photos/Thailand_big/8_01-036.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/9_01-038.jpg" data-big="photos/Thailand_big/9_01-038.jpg"/></td>
+				</tr>
+				<tr>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/10_01-021.jpg" data-big="photos/Thailand_big/10_01-021.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/11_001.jpg" data-big="photos/Thailand_big/11_001.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/12_003.jpg" data-big="photos/Thailand_big/12_003.jpg"/></td>				
+				</tr>
+				<tr>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/13_006.jpg" data-big="photos/Thailand_big/13_006.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/14_007.jpg" data-big="photos/Thailand_big/14_007.jpg"/></td>
+					<td><img class="fancybox" id="landscape" src="photos/Thailand_small/15_008.jpg" data-big="photos/Thailand_big/15_008.jpg"/></td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer">created by <span>Dave Dwight<span></div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+		<script type="text/javascript">
+    		$(function($){
+        	var addToAll = false;
+        	var gallery = true;
+        	var titlePosition = 'inside';
+        	$(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+       		 });
+        	if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        	$('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        	});
+    		});
+    		$.noConflict();
+		</script>
+	</body>
+</html>

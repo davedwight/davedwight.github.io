@@ -5,7 +5,8 @@
 body {
 	background-color: #FDFEFE;
 	font-family: Futura, Tahoma, sans-serif;
-	margin: 0;
+	margin: auto;
+	width: 100%;
 	/*if you want a background image
 	
 	background-image: url(Rinjani.jpg);
@@ -13,33 +14,47 @@ body {
 	background-repeat: no-repeat;*/
 }
 
-#navbar {
-	width: 700px;
-	display: block;
+/*#space {
+	height: 100px;
+	width: 100%;
+}*/
+
+#header {
+	width: 100%;
+	top: 0;
+	background-color: #FDFEFE;
+	height: 80px;
+	position: fixed;
+}
+
+.container {
+	width: 960px;
 	margin: 0 auto;
 }
 
-#logo {
-	width: 260px;
-	height: 130px;
-	margin-top: 5%;
-	margin-bottom: 50px;
-	display: inline-block;
+.logocontainer {
 	float: left;
+	margin-top: 18px;
+}
+
+#logoimage {
+	width: 350px;
+	height: 53px;
+}
+
+.nav {
+	float: right;
 }
 
 ul {
 	list-style-type: none;
 	font-weight: 100;
 	font-size: 0.8em;
-	display: inline-block;
-	margin-top: 13%;
-	float: right;
 }
 
 li {
-	display: inline-block;
-	padding: 0px 10px 0px 10px;
+	float: left;
+	margin: 28px 10px 5px 10px;
 }
 
 a {
@@ -52,22 +67,28 @@ li a:hover {
 	text-decoration: none;
 }
 
-h2 {
-	margin-left: 10%;
-	clear: both;
+.bodycontainer {
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+
+#toptitle {
+	margin-top: 0;
+}
+
+.posttitle { 
 	margin-bottom: -15px;
+	margin-top: 50px;
 }
 
 h4 {
-	margin-left: 10%;
 	margin-bottom: 20px;
 	color: #808B96;
 	}
 
 p {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 50px;
 	color: #2C3E50;	
 }
 	
@@ -76,8 +97,6 @@ p {
 	padding: 15px 0px 15px 5px;
 	font-weight: 100;
 	font-size: 0.8em;
-	margin-bottom: -100px;
-	margin-top: 50px;
 	float: left;
 }
 
