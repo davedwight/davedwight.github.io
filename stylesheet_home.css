@@ -56,7 +56,7 @@ ul {
 
 li {
 	float: left;
-	margin: 32px 10px 5px 10px;
+	margin: 30px 10px 5px 10px;
 }
 
 a {
@@ -165,7 +165,7 @@ span {
 	padding: 15px 0px 15px 5px;
 	font-weight: 100;
 	font-size: 0.9em;
-	margin-top: 70px;
+	margin-top: 130px;
 	float: left;
 	clear: both;
 	}
@@ -189,7 +189,7 @@ span {
 	width: 100%;
 	top: 0;
 	background-color: #FDFEFE;
-	height: 190px;
+	height: 180px;
 	position: fixed;
 	}
 
@@ -208,15 +208,15 @@ span {
 	.nav {
 	float: left;
 	clear: both;
-	width: 400px;
-	margin-top: 0px;
-	margin-left: -10%;
+	width: 420px;
+	margin-top: -15px;
+	margin-left: -15%;
 	}
 	
 	ul {
 	list-style-type: none;
 	font-weight: 100;
-	font-size: 1em;
+	font-size: 1.2em;
 	}
 	
 	li {
@@ -233,14 +233,14 @@ span {
 	#last {
 	float: right;
 	clear: both;
-	margin-top: -40px;
-	margin-right: 28%;
+	margin-top: -46px;
+	margin-right: 23%;
 	}
 		
 	#mainimagecontainer {
-	margin-top: 200px;
+	margin-top: 180px;
 	margin-left: -1%;
-	width: 450px;
+	width: 480px;
 	overflow: hidden;
 	}
 
