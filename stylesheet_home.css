@@ -5,19 +5,18 @@
 body {
 	background-color: #FDFEFE;
 	font-family: Futura, Tahoma, sans-serif;
-	margin: auto;
-	width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+	
 	/*if you want a background image
 	
 	background-image: url(Rinjani.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;*/
-}
-
-/*#space {
-	height: 100px;
-	width: 100%;
-}*/
 
 .header {
 	width: 100%;
@@ -171,14 +170,6 @@ span {
 }
 
 @media screen and (max-width: 500px) {
-
-	html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-	}
 	
 	.header {
 	width: 100%;
