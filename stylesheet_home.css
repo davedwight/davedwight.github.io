@@ -28,7 +28,7 @@ body {
 }
 
 .headercontainer {
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -141,7 +141,8 @@ span {
 @media screen and (max-width: 900px) {
 	
 	.headercontainer {
-	width: 770px;
+	max-width: 90%;
+	min-width: 770px;
 	margin: 0 auto;
 	}
 	
@@ -178,27 +179,28 @@ span {
 	.header {
 	width: 100%;
 	top: 0;
-	height: 180px;
+	height: 150px;
+	position: absolute;
 	}
 
 	.headercontainer {
 	width: 350px;
-	margin: 0 auto;
+	position: absolute;
+	margin-left: 1%;
 	}
 	
 	.logocontainer {
-	float: left;
 	margin-top: 18px;
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	margin-left: 3%;
 	}
 
 	.nav {
 	float: left;
 	clear: both;
 	width: 420px;
-	margin-top: -15px;
-	margin-left: -15%;
+	margin-top: 40px;
+	margin-left: -2%;
 	}
 	
 	ul {
@@ -208,21 +210,21 @@ span {
 	}
 	
 	li {
-	margin: 20px;
+	margin: 15px;
 	}
 	
 	.secondrow {
 	float: left;
 	clear: both;
-	margin-top: -10px;
-	margin-left: 22%;
+	margin-top: -15px;
+	margin-left: 20%;
 	}
 	
 	#last {
 	float: right;
 	clear: both;
-	margin-top: -46px;
-	margin-right: 23%;
+	margin-top: -41px;
+	margin-right: 28%;
 	}
 		
 	.contentcontainer {
