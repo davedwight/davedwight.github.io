@@ -391,9 +391,9 @@ span {
 	.textcontainer {
 		float: left;
 		clear: both;
-		width: 90%;
+		width: 85%;
 		margin-left: 5%;
-		margin-right: 10%;
+		margin-right: 5%;
 		margin-top: 10px;
 	}
 	
