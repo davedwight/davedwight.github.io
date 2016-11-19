@@ -5,36 +5,31 @@
 body {
 	background-color: #FDFEFE;
 	font-family: Futura, Tahoma, sans-serif;
-	margin: auto;
-	width: 100%;
-	/*if you want a background image
-	
-	background-image: url(Rinjani.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
-/*#space {
-	height: 100px;
-	width: 100%;
-}*/
-
-#header {
+.header {
 	width: 100%;
 	top: 0;
 	background-color: #FDFEFE;
 	height: 80px;
 	position: fixed;
+	overflow-x: hidden;
 }
 
-.container {
-	width: 960px;
+.headercontainer {
+	width: 90%;
 	margin: 0 auto;
 }
 
 .logocontainer {
 	float: left;
 	margin-top: 18px;
+	width: 350px;	
 }
 
 #logoimage {
@@ -54,7 +49,7 @@ ul {
 
 li {
 	float: left;
-	margin: 28px 10px 5px 10px;
+	margin: 30px 10px 5px 10px;
 }
 
 a {
@@ -67,7 +62,7 @@ li a:hover {
 	text-decoration: none;
 }
 
-.bodycontainer {
+.contentcontainer {
 	margin-top: 100px;
 }
 
@@ -76,28 +71,12 @@ li a:hover {
 }	
 
 img {
-	max-width: 900px;
-	max-height: 600px;
+	width: 90%;
+	height: auto;
 	display: block;
 	margin: auto;
 	margin-bottom: 40px;
 }
-
-/*.oddimage {
-	margin-left: 10%;
-}
-
-.evenimage {
-	margin-left: 30%;
-}
-
-.oddheader {
-	margin-left: 20%;
-}
-
-.evenheader {
-	margin-left: 40%;
-}*/
 	
 h3 {
 	margin: auto;
@@ -107,7 +86,7 @@ h3 {
 	margin-bottom: 100px;
 }
 	
-#footer {
+.footer {
 	background-color: none;
 	padding: 15px 0px 15px 5px;
 	font-weight: 100;
@@ -118,4 +97,100 @@ h3 {
 span {
 	font-weight: bold;
 	color: black;
+}
+
+@media screen and (max-width: 900px) {
+	
+	.headercontainer {
+		max-width: 90%;
+		min-width: 770px;
+		margin: 0 auto;
+	}
+
+	.contentcontainer {
+		min-width: 500px;
+		}
+	
+	.footer {
+	font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.header {
+	width: 100%;
+	top: 0;
+	height: 150px;
+	position: absolute;
+	}
+
+	.headercontainer {
+	width: 350px;
+	position: absolute;
+	margin-left: -3%;
+	}
+	
+	.logocontainer {
+	margin-top: 18px;
+	position: absolute;
+	margin-left: 3%;
+	height: 10px;
+	}
+
+	.nav {
+	float: left;
+	clear: both;
+	width: 420px;
+	margin-top: 40px;
+	margin-left: -2%;
+	}
+	
+	ul {
+	list-style-type: none;
+	font-weight: 100;
+	font-size: 1.2em;
+	}
+	
+	li {
+	margin: 15px;
+	}
+	
+	.secondrow {
+	float: left;
+	clear: both;
+	margin-top: -15px;
+	margin-left: 20%;
+	}
+	
+	#last {
+	float: right;
+	clear: both;
+	margin-top: -41px;
+	margin-right: 28%;
+	}
+	
+	#boldshift {
+	margin-left: 6px;
+	}
+	
+	.contentcontainer {
+	margin-top: 160px;
+	min-width: 0;
+	}
+	
+	img {
+	width: 100%;
+	margin-bottom: 20px;
+	}
+	
+	h3 {
+	margin-bottom: 40px;
+	}
+	
+	.footer {
+	font-size: 1em;
+	padding-top: 60px;
+	}
+	
 }
