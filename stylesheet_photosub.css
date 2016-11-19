@@ -5,36 +5,32 @@
 body {
 	background-color: #FDFEFE;
 	font-family: Futura, Tahoma, sans-serif;
-	margin: auto;
-	width: 100%;
-	/*if you want a background image
-	
-	background-image: url(Rinjani.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
-/*#space {
-	height: 100px;
-	width: 100%;
-}*/
-
-#header {
+.header {
 	width: 100%;
 	top: 0;
 	background-color: #FDFEFE;
 	height: 80px;
 	position: fixed;
+	overflow-x: hidden;
+	z-index: 1;
 }
 
-.container {
-	width: 960px;
+.headercontainer {
+	width: 90%;
 	margin: 0 auto;
 }
 
 .logocontainer {
 	float: left;
 	margin-top: 18px;
+	width: 350px;	
 }
 
 #logoimage {
@@ -54,7 +50,7 @@ ul {
 
 li {
 	float: left;
-	margin: 28px 10px 5px 10px;
+	margin: 30px 10px 5px 10px;
 }
 
 a {
@@ -71,32 +67,35 @@ li a:hover {
 	margin-top: 100px;
 }
 
-#titlecontainer {
-	width: 960px;
-	margin: 0 auto -20px auto;
-}
-
 h5 {
 	font-weight: 600;
+	text-decoration: underline;
+	margin-left: 20px;
 }
 
-#landscape {
-	width: 300px;
-	height: 200px;
-	padding: 20px;
-	padding-bottom: 30px;
+.wrap {
+	overflow: hidden;
+	margin: 10px;
 }
 
-#portrait {
-	width: 200px;
-	height: 300px;
-	padding-left: 70px;
+.box {
+	float: left;
+	position: relative;
+	width: 33.3%;
+	padding-bottom: 22.2%;
 }
 
-table {
-	margin: auto;
-	clear: both;
-	margin-top: 10px;
+.boxInner {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;
+	overflow: hidden;
+}
+
+.boxInner img {
+	width: 100%;
 }
 	
 #footer {
@@ -111,3 +110,112 @@ span {
 	font-weight: bold;
 	color: black;
 }
+
+@media screen and (max-width: 900px) {
+	.headercontainer {
+		max-width: 90%;
+		min-width: 770px;
+		margin: 0 auto;
+	}
+	
+	.box {
+		width: 50%;
+		padding-bottom: 33.3%;
+		}
+	
+	#footer {
+	font-size: 0.9em;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+	width: 100%;
+	top: 0;
+	height: 150px;
+	position: absolute;
+	}
+
+	.headercontainer {
+	width: 350px;
+	position: absolute;
+	margin-left: -3%;
+	}
+	
+	.logocontainer {
+	margin-top: 18px;
+	position: absolute;
+	margin-left: 3%;
+	height: 10px;
+	}
+
+	.nav {
+	float: left;
+	clear: both;
+	width: 420px;
+	margin-top: 40px;
+	margin-left: -2%;
+	}
+	
+	ul {
+	list-style-type: none;
+	font-weight: 100;
+	font-size: 1.2em;
+	}
+	
+	li {
+	margin: 15px;
+	}
+	
+	.secondrow {
+	float: left;
+	clear: both;
+	margin-top: -15px;
+	margin-left: 20%;
+	}
+	
+	#last {
+	float: right;
+	clear: both;
+	margin-top: -41px;
+	margin-right: 28%;
+	}
+	
+	#boldshift {
+	margin-left: 6px;
+	}
+	
+	.bodycontainer {
+	margin-top: 180px;
+	}
+	
+	h5 {
+	font-size: 1.2em;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	}
+
+	.box {
+		width: 100%;
+		padding-bottom: 66.6%;
+		}
+		
+	.boxInner {
+		left: 0px;		
+		right: 0px;	
+		}
+		
+	.wrap {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	#footer {
+	font-size: 1em;
+	}
+	
+}
+
