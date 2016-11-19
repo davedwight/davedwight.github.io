@@ -11,11 +11,6 @@ body {
     padding: 0px;
     overflow-x: hidden; 
 }
-	/*if you want a background image
-	
-	background-image: url(Rinjani.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;*/
 
 .header {
 	width: 100%;

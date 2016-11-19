@@ -24,7 +24,7 @@ body {
 	background-color: #FDFEFE;
 	height: 80px;
 	position: fixed;
-	overflow-x: hidden;
+	z-index: 1;
 }
 
 .headercontainer {
@@ -35,7 +35,6 @@ body {
 .logocontainer {
 	float: left;
 	margin-top: 18px;
-	width: 350px;	
 }
 
 #logoimage {
