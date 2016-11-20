@@ -9,7 +9,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow: hidden; 
+    overflow-x: hidden; 
 }
 
 .header {
@@ -19,6 +19,7 @@ body {
 	height: 80px;
 	position: fixed;
 	z-index: 1;
+	overflow-x: hidden;
 }
 
 .headercontainer {
