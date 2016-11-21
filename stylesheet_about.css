@@ -124,7 +124,8 @@ li a:hover {
 
 .textcontainer {
 	float: right;
-	width: 450px;
+	width: 48%;
+	height: 100%;
 	margin-right: 10px;
 }
 
@@ -132,6 +133,7 @@ p {
 	font-size: 1em;
 	font-weight: 50;
 	line-height: 30px;
+	width: 90%;
 }
 
 h3 {
