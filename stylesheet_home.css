@@ -234,8 +234,7 @@ span {
 	}
 
 	.footer {
-	font-size: 1em;
-	padding-bottom: 5px;
+	visibility: hidden;
 	}
 	
 }
