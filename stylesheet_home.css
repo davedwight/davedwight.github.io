@@ -218,12 +218,8 @@ span {
 	margin-right: 28%;
 	}
 		
-	.contentcontainer {
-	margin-top: 180px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	position: relative;
+	.content {
+	margin-top: 140px;
 	}
 	
 	.image_iconcontainer {
